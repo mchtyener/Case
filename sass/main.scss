@@ -1,0 +1,145 @@
+$buttoncolor:#C39A6A;
+$font:'Noto Sans JP', sans-serif !important;
+$white:#fff;
+$btnpadding:3px 39px;
+$modalshadow:0 3px 8px rgba(125,124,124,1);
+
+.navbar {
+  background: #F9F9F9 !important;
+  height: 75px;
+}
+* {
+  font-family:$font ;
+}
+
+.nav-item {
+  background: $buttoncolor;
+  height: 34px;
+}
+
+#new-cinema {
+  background: $buttoncolor;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#navbarSupportedContent > div > div.col-lg-5.text-center > a {
+  font-weight: bold;
+}
+
+#list-task > div {
+  background-color: $white;
+}
+
+.up > svg {
+  color: forestgreen;
+  cursor: pointer;
+}
+
+.down > svg {
+  color: red;
+  cursor: pointer;
+}
+
+#list-task > div > div > span:nth-child(2) > svg {
+  color: #EFCE4A;
+  margin-right: 4px;
+}
+
+body > div.container > div > div.form-check.d-flex.justify-content-center.mt-2 {
+  margin-left: 43px;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+#diziChecked,
+#filmChecked {
+  border-radius: 50% !important;
+}
+
+.popup-container{
+  display: none;
+}
+
+.popup-container input {
+  position: absolute;
+  left: -9999px;
+}
+.movie-name{
+  font-size: 29px;
+}
+
+.popup-container .popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(238, 238, 238, .8);
+  width: 100%;
+  height: 100%;
+  z-index: 90;
+}
+
+.popup-container .popup .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 317px;
+  background: $white;
+  padding: 20px;
+  box-shadow:$modalshadow;
+  height: 345px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+
+.popup-container input:checked + .popup {
+  opacity: 1;
+  visibility: visible;
+}
+
+.small-btn {
+  background: $buttoncolor;
+  color:$white;
+  padding: $btnpadding;
+  text-decoration: none;
+}
+
+.small-btn:hover {
+  color: $white;
+}
+
+
+#name > svg {
+  height: 16px;
+  margin-left: 5px;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+#name:hover svg {
+  visibility: inherit;
+}
+.bi-trash{
+  cursor: pointer;
+  color: red;
+}
+

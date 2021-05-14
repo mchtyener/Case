@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <title>Hello, world!</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="row p-0 m-0 w-100 align-items-center justify-content-center d-flex">
+                <div class="col-lg-2">
+                    <a href="index.html" class="text-dark nav-item text-decoration-none text-white p-2 rounded-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                    </svg> Listeye Dön
+                    </a>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <a class="text-dark text-decoration-none ">Case Study</a>
+                </div>
+                <div class="col-lg-2 ">
+                    <a class="text-dark nav-item text-decoration-none text-white p-2 rounded-2" id="new-cinema"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                        <path d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"/>
+                    </svg>YENİ KAYIT
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="form-check d-flex justify-content-center mt-2">
+        <div class="col-lg-1">
+
+            <input class="form-check-input" type="radio" name="video" value="Film" id="filmChecked">
+            <label class="form-check-label" for="filmChecked">
+                Film
+            </label>
+
+        </div>
+        <div class="col-lg-1">
+
+            <input class="form-check-input" type="radio" name="video" value="Dizi" id="diziChecked">
+            <label class="form-check-label" for="diziChecked">
+                Dizi
+            </label>
+
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mx-auto d-block my-2">
+        <input type="text" class="form-control text-center"  placeholder="Dizi / Film" id="fullName">
+    </div>
+
+    <div class="col-lg-2 col-md-6 mx-auto">
+        <input type="number" min="0" class="form-control text-center" placeholder="Puan" id="videoStart" onkeypress="return isNumberKey(event)">
+
+    </div>
+
+    <div class="col-lg-2 col-md-6 mx-auto justify-content-center d-flex my-2 small-btn">
+        <a class="small-btn" id="saveBtn"> Kaydet</a>
+    </div>
+</div>
+
+<div class="popup-container" id="popup-container">
+    <input type="checkbox" id="popup">
+    <div class="popup">
+        <div class="inner rounded">
+            <img src="tik.png" class="img-fluid mx-auto d-block" alt="" width="100">
+            <p class="text-center my-3">Kaydedildi</p>
+            <a class="btn mx-auto d-block small-btn" id="popupClose"> Tamam</a>
+        </div>
+
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+</body>
+</html>
